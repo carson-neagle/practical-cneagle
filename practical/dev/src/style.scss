@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora&display=swap');
+
+// Variables based on Figma file
+$font-sans-serif: Inter, 'Helvetica Neue', sans-serif;
+$font-serif: 'Lora', 'Palatino', serif;
+$color-luxe-gray: #393A3F;
+$color-luxe-gray-light: #797B86;
+$color-white: #FFF;
+
+:root {
+  font-family: $font-sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $color-luxe-gray;
+  color: $color-white;
+  display: flex;
+  padding: 50px 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: auto;
+
+  @media screen and (max-width: 576px) {
+    display: flex;
+    width: 390px;
+    height: 1837px;
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 992px){
+    display: flex;
+    width: 820px;
+    height: 1180px;
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+h1 {
+  font-family: $font-serif;
+}
+
+a {
+  color: $color-white;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  @media screen and (max-width: 576px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+    margin: auto;
+    width: 390px;
+  }
+}
+
+.logotype {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  margin: auto;
+
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+  }
+}
+
+.brands{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 576px) {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+  }
+}
+
+.item{
+  color: #FFF;
+  font-family: Lora;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 0%;
+
+  @media screen and (max-width: 576px) {
+    color: #FFF;
+    font-family: Lora;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 2.2px;
+  }
+}
+
+.description{
+  display: flex;
+  width: 703px;
+  flex-direction: column;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 390px;
+  }
+}
+
+.annotatedImage{
+  width: 1452px;
+  height: 790px;
+  background: url(/main.jpg), lightgray 50% / cover no-repeat;
+  flex-shrink: 0;
+
+  @media screen and (min-width: 576px) and (max-width: 992px){
+    background: url(/main.jpg);
+    margin: auto;
+    width: 820px;
+  }
+
+  @media screen and (max-width: 390px) {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  @media screen and (max-width: 576px) {
+    width: 390px;
+    height: 945px;
+    background: url(/main-mobile.jpg), lightgray 50% / cover no-repeat;
+  }
+
+    .annotationOne{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      position: relative;
+      left: 156px;
+      top: 210px;
+  
+      .lineOne{
+        stroke-width: 1px;
+        stroke: #FFF;
+        margin: 0%;
+      }
+  
+      .text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .title{
+          color: #FFF;
+          font-family: Lora;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin: 0%;
+        }
+  
+        .description{
+          display: flex;
+          width: 258px;
+          max-width: 280px;
+          flex-direction: column;
+          color: var(--white, #FFF);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          text-align: left;
+          margin: auto;
+        }
+      }
+      @media screen and (max-width: 992px){
+        display: none;
+      }
+    }
+  
+    .annotationTwo{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      position: relative;
+      left: -150px;
+      top: 390px;
+  
+      .lineTwo{
+        stroke-width: 1px;
+        stroke: #FFF;
+        margin: 0%;
+      }
+  
+      .textTwo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .titleTwo{
+          color: #FFF;
+          font-family: Lora;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin: 0%;
+        }
+  
+        .descriptionTwo{
+          display: flex;
+          width: 280px;
+          max-width: 280px;
+          flex-direction: column;
+          color: #FFF;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          margin: 0%;
+        }
+      }
+      @media screen and (max-width: 992px){
+        display: none;
+      }
+    }
+  
+    .annotationThree{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      position: relative;
+      left: -425px;
+      top: 645px;
+  
+      .lineThree{
+        stroke-width: 1px;
+        stroke: #FFF;
+        margin: 0%;
+      }
+  
+      .textThree{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .titleThree{
+          color: #FFF;
+          font-family: Lora;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin: 0%;
+        }
+  
+        .descriptionThree{
+          display: flex;
+          width: 280px;
+          max-width: 280px;
+          flex-direction: column;
+          color: #FFF;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          margin: 0%;
+        }
+      }
+      @media screen and (max-width: 992px){
+        display: none;
+      }
+    }
+  
+    .annotationFour{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      position: relative;
+      left: 831px;
+      top: 150px;
+  
+      .lineFour{
+        stroke-width: 1px;
+        stroke: #FFF;
+        margin: 0%;
+      }
+  
+      .textFour{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .titleFour{
+          color: #FFF;
+          text-align: right;
+          font-family: Lora;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin: 0%;
+        }
+  
+        .descriptionFour{
+          display: flex;
+          width: 240px;
+          max-width: 280px;
+          flex-direction: column;
+          color: #FFF;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          margin: 0%;
+        }
+      }
+      @media screen and (max-width: 992px){
+        display: none;
+      }
+    }
+  
+    .annotationFive{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      position: relative;
+      left: 450px;
+      top: 325px;
+  
+      .lineFive{
+        stroke-width: 1px;
+        stroke: #FFF;
+        margin: 0%;
+      }
+  
+      .textFive{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .titleFive{
+          color: #FFF;
+          text-align: right;
+          font-family: Lora;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin: 0%;
+        }
+  
+        .descriptionFive{
+          display: flex;
+          max-width: 280px;
+          flex-direction: column;
+          align-self: stretch;
+          color: #FFF;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          margin: 0%;
+        }
+      }
+      @media screen and (max-width: 992px){
+        display: none;
+      }
+    }
+  }
+
+.frame{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  .frame-text{
+    display: flex;
+    width: 599px;
+    flex-direction: column;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    @media screen and (max-width: 576px){
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 0;
+      color: #FFF;
+      text-align: center;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  @media screen and (max-width: 576px){
+    display: flex;
+    padding: 0px 25px;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+}
+
+.image-set{
+  display: flex;
+  width: 1452px;
+  align-items: flex-start;
+  gap: 30px;
+
+  @media screen and (min-width: 576px) and (max-width: 992px){
+    width: 820px;
+  }
+
+  .detail-one{
+    display: flex;
+    height: 475px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 576px){
+      display: none;
+    }
+    @media screen and (min-width: 576px) and (max-width: 992px){
+      width: 390px;
+      height: auto;
+      margin: auto;
+    }
+
+  }
+
+  .detail-two{
+    display: flex;
+    height: 475px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    right: 0px;
+
+    @media screen and (min-width: 576px) and (max-width: 992px){
+      width: 390px;
+      height: auto;
+      margin: auto;
+    }
+    
+    @media screen and (max-width: 576px){
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px){
+    display: none;
+    
+  }
+}
+
+.image-set-mobile{
+  @media screen and (min-width: 576px){
+    display: none;
+  }
+ 
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: auto;
+
+  .detail-one-mobile{
+    flex: 1 0 0;
+    align-self: stretch;
+    height: 216px;
+  }
+
+  .detail-two-mobile{
+    flex: 1 0 0;
+    align-self: stretch;
+    height: 216px;
+  }
+}
+
+@media screen and (max-width: 576px){
+
+  .annotation-number{
+    display: flex;
+    width: 10px;
+    height: 15px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Lora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    z-index: 1;
+    margin: 0%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+
+    .node-background{
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      z-index: 0;
+    }
+
+  }
+
+  .node-one{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 60px;
+    top: 500px;
+    
+  }
+
+  .node-two{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 315px;
+    top: 535px;
+  }
+
+  .node-three{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 350px;
+    top: 700px;
+  }
+
+  .node-four{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 120px;
+    top: 680px;
+  }
+
+  .node-five{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 70px;
+    top: 825px;
+  }
+  .mobile-annotations{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    position: absolute;
+    left: 15px;
+    top: 950px;
+
+    .annotation{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 15px;
+      align-self: stretch;
+
+      .mobile-annotation-number{
+        color: var(--luxe-gray-light, #797B86);
+        font-family: Lora;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+      }
+
+
+
+      .mobile-annotation-writing{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        position: relative;
+        left: 20px;
+        top: -28px;
+
+        .mobile-annotation-title{
+          color: var(--luxe-gray, #393A3F);
+          font-family: Lora;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          margin: 0%;
+        }
+
+        .mobile-annotation-description{
+          color: var(--luxe-gray, #393A3F);
+          font-family: Inter;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          margin: 0%;
+          width: 100%;
+        }
+      }
+
+    }
+  }
+  }
+
+
+@media screen and (min-width: 992px){
+  .annotated-image-mobile{
+    display:none;
+  }
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .node-one{
+    display: none;
+  }
+
+  .node-two{
+    display: none;
+  }
+
+  .node-three{
+    display: none;
+  }
+
+  .node-five{
+    display: none;
+  }
+
+  .node-four{
+    display: none;
+  }
+
+  .annotation{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    align-self: stretch;
+    position: absolute;
+    top: 600px;
+    left: 20px;
+
+    .mobile-annotation-number{
+      color: var(--luxe-gray-light, #797B86);
+      font-family: Lora;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+    }
+
+
+
+    .mobile-annotation-writing{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1 0 0;
+      position: relative;
+      left: 20px;
+      top: -28px;
+
+      .mobile-annotation-title{
+        color: var(--luxe-gray, #393A3F);
+        font-family: Lora;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0%;
+      }
+
+      .mobile-annotation-description{
+        color: var(--luxe-gray, #393A3F);
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0%;
+        width: 75%;
+      }
+    }
+  }
+}
